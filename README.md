@@ -19,4 +19,4 @@ Para a criação desta API, foram usadas às seguintes dependências:
 Foi instalado e configurado o [Prettier](https://prettier.io/) para manter o código limpo e padronizado. <b>
 
 
-**🛠️ *API ainda em desenvolvimento**
+🛠️ **API ainda em desenvolvimento**
