@@ -1,3 +1,6 @@
+import "reflect-metadata";
+import "../core/database";
+
 import { NODE_PORT } from "../config";
 import apiRouter from "./routes";
 import express from "express";
