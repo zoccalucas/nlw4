@@ -16,7 +16,7 @@ Para a criação desta API, foram usadas às seguintes dependências:
 - [TypeScript](https://www.typescriptlang.org/);
 - [TypeORM](https://typeorm.io/#/) (Para o DB SQL);
 
-Foi instalado e configurado o [Prettier](https://prettier.io/) para manter o código limpo e padronizado.
+Foi instalado e configurado o [Prettier](https://prettier.io/) para manter o código limpo e padronizado. <b>
 
 
-OBS: 🛠️ **API ainda em desenvolvimento**
+**🛠️ *API ainda em desenvolvimento**
