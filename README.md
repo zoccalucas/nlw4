@@ -6,6 +6,18 @@ Projeto inspirado na 4° edição da NLW (Next Level Week), promovido pela Rocke
 
 API de NPS (Net Promoter Score), uma metodologia de satisfação de clientes desenvolvida para avaliar o grau de fidelidade dos clientes de qualquer perfil de empresa. A API possuí sistema de cadastro de usuários, cadastro de pesquisas, envio de email com pesquisas e cálculo do NPS. Também, foi utilizado o Jest para realização dos testes automatizados da aplicação e o Nodemailer em conjunto do Handlebars para o envio de templates de emails.
 
+Nesta API é possível realizar as seguintes funções:
+
+- Cadastrar usuários;
+- Cadastrar pesquisas;
+- Listar as pesquisas;
+- Enviar emails com as pesquisas para os usuários cadastrados;
+- Calcular o NPS das pesquisas.
+
+Testes:
+
+- Testes automatizados com o Jest.
+
 ## ⚙ Tecnologias utilizadas:
 
 Para a criação desta API, foram usadas às seguintes dependências:
@@ -17,6 +29,7 @@ Para a criação desta API, foram usadas às seguintes dependências:
 - [Jest](https://jestjs.io/);
 - [Nodemailer](https://nodemailer.com/about/); 
 - [Handlebars](https://handlebarsjs.com/); 
+- [Yup](https://www.npmjs.com/package/yup);
 
 Foi instalado e configurado o [Prettier](https://prettier.io/) para manter o código limpo e padronizado.
 
@@ -31,4 +44,4 @@ Foi instalado e configurado o [Prettier](https://prettier.io/) para manter o có
 
    _OBS: A API estará rodando na porta 3333._
 
-🛠️ **API ainda em desenvolvimento**
+
