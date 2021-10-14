@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 
+import { AppError } from "../../core/errors/appError";
 import SendMailService from "../../core/services/SendMailService";
 import { SurveysRepository } from "../../core/repositories/SurveysRepository";
 import { SurveysUsersRepository } from "../../core/repositories/SurveysUsersRepository";
@@ -18,7 +19,7 @@ class SendMailController {
     const user = await usersRepository.findOne({ email });
 
     if (!user) {
-      return res.status(400).json({ error: "User does not exists" });
+      throw new AppError("User does not exists");
     }
 
     const survey = await surveysRepository.findOne({
@@ -26,7 +27,7 @@ class SendMailController {
     });
 
     if (!survey) {
-      return res.status(400).json({ error: "Survey does not exists" });
+      throw new AppError("Survey does not exists!");
     }
 
     const npsPath = resolve(

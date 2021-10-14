@@ -1,6 +1,7 @@
 import { IsNull, Not, getCustomRepository } from "typeorm";
 import { Request, Response } from "express";
 
+import { AppError } from "../../core/errors/appError";
 import { SurveysRepository } from "../../core/repositories/SurveysRepository";
 import { SurveysUsersRepository } from "../../core/repositories/SurveysUsersRepository";
 
@@ -21,13 +22,11 @@ class NpsController {
     });
 
     if (!survey) {
-      return res.status(400).json({ error: "Survey does not exists" });
+      throw new AppError("Survey does not exists!");
     }
 
     if (!surveysUsers) {
-      return res.status(400).json({
-        error: "Survey User does not exists!",
-      });
+      throw new AppError("Survey User does not exists!");
     }
 
     const detractor = surveysUsers.filter(
