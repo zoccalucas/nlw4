@@ -1,3 +1,4 @@
+import SendMailController from "./controllers/SendMailController";
 import SurveysController from "./controllers/SurveysController";
 import UserController from "./controllers/UserController";
 import express from "express";
@@ -13,5 +14,9 @@ router
   .route("/surveys")
   .get(SurveysController.show)
   .post(SurveysController.create);
+
+  router
+  .route("/send_mail")
+  .post(SendMailController.execute);
 
 export default router;
